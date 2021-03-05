@@ -1,0 +1,15 @@
+newsletter-user-receiver:
+  storage:
+    bucket: "newscorp-user-update"
+    projectId: "hellomicronaut"
+  pubsub:
+    projectId: "hellomicronaut"
+    subscription: "user-update-sub"
+  publisher:
+    topic: "user-storage"
+    projectId: "hellomicronaut"
+
+
+micronaut:
+  application:
+    name: newsletterUserManagement
